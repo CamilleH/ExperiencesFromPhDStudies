@@ -1,0 +1,381 @@
+\documentclass[screen, aspectratio=43]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{wasysym}
+
+% Use the NTNU-temaet for beamer 
+% \usetheme[style=ntnu|simple|vertical|horizontal, language=bm|nn|en]{ntnu2015}
+\usetheme[style=ntnu,language=en]{ntnu2015}
+ 
+\title{Experiences from PhD studies}
+\author{Camille Hamon}
+\date{25 November 2016}
+
+\begin{document}
+
+% Special title page command to get a different background
+\ntnutitlepage
+
+\begin{frame}
+  \frametitle{Top three things I would have done differently}
+  \begin{itemize}
+  \item Better programming practices
+    \begin{itemize}
+    \item Coding is what takes most of our time.  
+    \item We are not educated or trained properly to program. 
+    \item There exist well-recognized programming practices but we don’t know them.  
+    \item Especially: Version control and test-driven development
+    \end{itemize}
+  \item Get off the computer and dedicate more time to set my research in perspective (instead of digging into coding right away)
+    \begin{itemize}
+    \item Where does my research fit in? 
+    \item What exactly do I want to solve? 
+    \item Talk with different people (fellow PhD students, industry, …) $\Rightarrow$ different people = different target groups = formulate your problem differently = different perspectives
+    \end{itemize}
+  \item Sometimes, the best you can do is to call it a day.
+  \end{itemize}
+\end{frame}
+
+\section{Importance of clearly defining your problem}
+\begin{frame}
+  \frametitle{How I worked}
+  \begin{itemize}
+  \item My working habits as a PhD student:
+    \begin{enumerate}
+    \item Spend some time on thinking
+      \begin{itemize}
+      \item What the problem is
+      \item How to solve it
+      \end{itemize}
+    \item Spend a lot of time in Matlab
+    \end{enumerate}
+  \item In real-life:
+    \begin{itemize}
+    \item Problem formulation and definition of case studies take the larger share of a project time
+    \item Coding comes late in a project
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Defining your problem}
+Very important to define:
+\begin{itemize}
+\item The scope using well-accepted terms
+  \begin{itemize}
+  \item Including time horizon of interest
+  \item Processes of interest
+  \item Where it fits in in today's real-life practices
+  \item Be clear about your assumptions: today's assumptions are future work!
+  \item When writing papers, this helps reviewers know exactly what you are addressing, and what you are not (equally important)
+  \end{itemize}
+\item What others have done
+\item What the industry is doing
+\item The broader picture and the more detailed picture
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Defining your problem - 2}
+Very important to define:
+\begin{itemize}
+\item The scope using well-accepted terms
+\item What others have done
+  \begin{itemize}
+  \item Important for yourself = where do you stand? Where do you fit in among all other research?
+  \item Keep a running literature review and come back to it and update it
+  \item Gives you a map of the field
+  \item Helps you identify the dimensions of the problem
+  \item Possible collaboration with others
+  \item It takes time but having a solid knowledge of the literature is very valuable
+  \end{itemize}
+\item What the industry is doing
+\item The broader picture and the more detailed picture
+\end{itemize}    
+\end{frame}
+
+\begin{frame}
+  \frametitle{Literature review - my workflow}
+  \begin{itemize}
+  \item Zotero + one-click import from browser (metadata + PDF)
+  \item When starting research on a topic:
+    \begin{enumerate}
+    \item I create a new folder in Zotero
+    \item On Google scholar: enter different combinations of keywords related to your topics
+    \item Identify the important papers (based on number of citations or familiarity with some authors’ work) and work your way up from there or down
+      \begin{itemize}
+      \item Way up: what papers have cited this one? the «cited by» feature in Google scholar is very useful!
+      \item Way down: what papers were cited by this one? 
+      \end{itemize}
+    \item Identify the main people / research groups
+    \item Identify the main dimensions of the problems
+    \item Create a Latex document where I write my notes and compare how the papers address the different dimensions of the problem
+    \item Iterative process going back and forth between steps 2-6
+    \end{enumerate}
+  \item Difficulty: Filter the noise and identify the important research works
+  \item The more you read, the more efficient you become at this
+  \end{itemize} 
+\end{frame}
+
+\begin{frame}
+\frametitle{Defining your problem - 3}
+Very important to define:
+\begin{itemize}
+\item The scope using well-accepted terms
+\item What others have done
+\item What the industry is doing: Is some form of your problem addressed today by the industry?
+  \begin{itemize}
+  \item If it is, how do they do it? Why do we need to do differently? What assumptions do they make? What can we do better? What are the shortcomings of the current way of handling the problem?
+  \item If it is not, why don’t they do it? What makes the problem worth investigating? What could convince them of studying this problem?
+  \end{itemize}
+\item The broader picture and the more detailed picture
+\end{itemize}    
+\end{frame}
+
+\begin{frame}
+\frametitle{Defining your problem - 4}
+Very important to define:
+\begin{itemize}
+\item The scope using well-accepted terms
+\item What others have done
+\item What the industry is doing: Is some form of your problem addressed today by the industry?
+\item The broader picture and the more detailed picture
+  \begin{itemize}
+  \item What do you contribute to by solving the problem?
+  \item Both pictures are equally important
+  \item Don’t forget reality!
+  \item Be clear about your assumptions (assumptions = gap between reality and proposed method / tool)
+  \item Think about how to transition to your novel method / tool from today’s practices
+    \begin{itemize}
+    \item Roadmap from today’s practices to implementing and using your method = related to identifying the gaps
+    \item Ex: Data needs, etc … (got a lot of questions on this in conferences) => related to your assumptions
+    \end{itemize}
+  \end{itemize}
+\end{itemize}    
+\end{frame}
+
+\begin{frame}
+  \frametitle{Defining your problem when writing a paper}
+  \begin{itemize}
+  \item Remember that you have been working on your problem full time
+  \item Others, including reviewers, \textbf{have not}
+  \item Reviewers are familiar with existing work in the field
+  \item Important to clearly identify your contributions with respect to other research works
+  \item Tip from my PhD supervisor: write the introduction in four parts
+    \begin{enumerate}
+    \item Define what problem you investigate from the general picture (more RES, power systems closer to the their limits, …) to the particular problem you are looking at (interarea oscillations, market clearing, …)
+    \item what others have done
+    \item what others have \textbf{not} done = research gap
+    \item what you do = contributions
+    \end{enumerate}
+  \end{itemize}
+\end{frame}
+
+\section{Importance of discussing with others}
+
+\begin{frame}
+  \frametitle{Importance of discussing with others}
+  \begin{itemize}
+  \item Time spent discussing your project with others (and others' projects) = high return on investment
+  \item Important to adapt to whom you speak
+    \begin{itemize}[<only@1>]
+    \item Good training to try to convey your messages to different target groups
+    \end{itemize}
+  \item Fellow PhD students and academics
+    \begin{itemize}[<only@2>]
+    \item Read each others' papers, present to each other, \ldots
+    \item Working in the same field
+      \begin{itemize}
+      \item Discuss the details
+      \end{itemize}
+    \item Working in different fields
+      \begin{itemize}
+      \item Explain what you are doing
+      \item Bigger picture
+      \item Important when you are caught up in the details of your problem
+      \end{itemize}
+    \item Attend the Friday seminars \smiley{}
+    \end{itemize}
+  \item Industry
+    \begin{itemize}[<only@3>]
+    \item Industry is usually interested but time constrained
+    \item Need to reformulate your problem in industry terms
+    \item Again, adapt to your target group
+    \item Ask specific questions
+    \item Very beneficial for the scope of your research and supporting your research topic / research gap
+    \item Need to find the right person
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\section{Good coding practices}
+
+\begin{frame}
+  \frametitle{Coding}
+  \begin{itemize}
+  \item We spend most of our time coding models, algorithms, \ldots
+  \item Our code defines what results we obtain
+  \item We are self-taught programmers
+  \item We are unaware of good coding practices
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Good coding practices}
+Look at good programming practices (ex: \url{http://software-carpentry.org/lessons/}):
+\begin{itemize}
+\item Version control (git, subversion, \ldots)
+  \begin{itemize}[<only@1>]
+  \item Keeps track of the full history of your code
+  \item Avoids having \emph{myprogram\_v1.m}, \emph{myprogram\_v1.2.m}, \emph{myprogram\_old.m} types of files
+  \item Works very well with Latex manuscript as well
+  \item Allows you to revert back to what worked after you broke something
+  \item Excellent for collaborative research (both for the code and the paper)
+  \item Makes it easy to pick up a project after a couple of months by showing you the last changes you made the last time your worked on a project
+  \end{itemize}
+\item Test-drive programming and unit testing
+  \begin{itemize}[<only@2>]
+  \item Write tests to check your code
+  \item Debug until all tests are passed
+  \item If you update your code, check if your tests are still passed
+  \item Confident booster that your program is working as intended, even after updating it
+  \item Turn unexpected behaviors into tests
+  \end{itemize}
+\item Code review, pair programming
+  \begin{itemize}[<only@3>]
+  \item Code review = review code from/by others
+  \item Pair programming = sit together and code to explain your code to others
+    \begin{itemize}
+    \item Studies have shown that this is the single best way of finding errors and bugs
+    \end{itemize}
+  \end{itemize}
+\item Reproducible science
+  \begin{itemize}[<only@4>]
+  \item You get results on 1 January 2015
+  \item You can reproduce them on 1 January 2016 (after the review came back or because somebody is interested in your code, \ldots)
+  \item You send your code to somebody that can reproduce the results in your paper
+  \item Uses all the above programming practices
+  \item Is becoming a hot topic
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Coding - other tips}
+  \begin{itemize}
+  \item Break down your code into functional units/blocks
+    \begin{itemize}
+    \item One function to load the input data
+    \item One function to process the input data
+    \item One function to run what you are working on
+    \item One function to process the outputs and create graphics
+    \item \ldots
+    \end{itemize}
+  \item Easier to debug
+  \item Easier to use: you don't have to re-run the whole think every time
+  \item Easier to maintain: you can add features in some blocks without changing the others
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Coding: useful resources}
+  \begin{itemize}
+  \item Single best resource: \url{http://www.software-carpentry.org}
+    \begin{itemize}
+    \item Software carpentry promotes good coding practices for scientific computing
+    \item Free online lessons for Matlab, python, version control, R, \ldots
+    \item Recommended readings: \url{http://software-carpentry.org/reading/}
+    \end{itemize}
+  \item Testing in Matlab
+    \begin{itemize}
+    \item Don't do it yourself, Matlab has some builtin functions \url{http://se.mathworks.com/help/matlab/matlab-unit-test-framework.html?refresh=true}
+    \end{itemize}
+  \item Other recommended readings: \url{http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745}
+  \end{itemize}
+It takes time to learn new coding practices but it is time well spend.
+\end{frame}
+
+\section{Project management}
+\begin{frame}
+  \frametitle{Project management}
+  \begin{itemize}
+  \item PhD = several year project involving reading, writing, coding, taking courses, \ldots
+  \item Techniques exist for project and time management
+  \item Gives more structure to your work
+  \item Organisation and keeping track of todos and tasks
+    \begin{itemize}
+    \item Better visibility of what is coming
+    \item Less worried that you have forgotten something
+    \end{itemize}
+  \item Ex: define weekly goals and daily tasks
+    \begin{itemize}
+    \item You make sure that all you have to do this week (course, paper writing, coding, \ldots) will be allocated time
+    \item Don't overestimate how much you can do in one week
+    \item Don't underestimate how much you can do in a year!
+    \item Gives you a good overview of you week and a feeling of control
+    \item You look back at it and realise that you have done a lot!
+    \end{itemize}
+  \item Good course: \emph{Learning about learning}: \url{https://www.coursera.org/learn/learning-how-to-learn}
+    \begin{itemize}
+    \item Time management
+    \item Learning techniques
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\section{Tools}
+
+\begin{frame}
+  \frametitle{Tools}
+  \begin{itemize}
+  \item Research note managers
+    \begin{itemize}
+    \item Evernote
+    \item Org-mode in Emacs
+    \item Wikis
+    \item Word files
+    \item Latex files
+    \item Paper notebooks
+    \end{itemize}
+  \item Task managers
+    \begin{itemize}
+    \item Post-its, notebooks, apps, \ldots
+    \end{itemize}
+  \item Reference managers: zotero, mendeley, Excel, \ldots
+  \item Scientific computation
+    \begin{itemize}
+    \item Matlab
+    \item Python
+    \item R
+    \item Julia
+    \item \ldots
+    \end{itemize}
+  \item \textbf{Remember that the tool should serve you and not you the tool}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Top three things I would have done differently}
+  \begin{itemize}
+  \item Better programming practices
+    \begin{itemize}
+    \item Coding is what takes most of our time.  
+    \item We are not educated or trained properly to program. 
+    \item There exist well-recognized programming practices but we don’t know them.  
+    \item Especially: Version control and test-driven development
+    \end{itemize}
+  \item Get off the computer and dedicate more time to set my research in perspective (instead of digging into coding right away)
+    \begin{itemize}
+    \item Where does my research fit in? 
+    \item What exactly do I want to solve? 
+    \item Talk with different people (fellow PhD students, industry, …) $\Rightarrow$ different people = different target groups = formulate your problem differently = different perspectives
+    \end{itemize}
+  \item Sometimes, the best you can do is to call it a day.
+  \end{itemize}
+\end{frame}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
